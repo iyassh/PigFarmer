@@ -10,8 +10,8 @@ public class Farmer {
 
 
         Pig pig1 = new Pig("Toby","pink", "Male");
-        Pig pig2 = new Pig("Toby","Brown", "Male");
-        Pig pig3 = new Pig("Toby","Black", "Male");
+        Pig pig2 = new Pig("Matt","Brown", "Male");
+        Pig pig3 = new Pig("Doris","Black", "Male");
 
 
 
