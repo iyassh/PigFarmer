@@ -15,7 +15,7 @@ public class Pig {
     private Date DOB;
 
     public boolean isFemale(){
-        return false;
+        return sex.equals("Female");
     }
     public String getName(){
         return name;
