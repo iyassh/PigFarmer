@@ -1,4 +1,6 @@
 public class Feed {
+    private boolean isFull;
+    private double weight;
     private static int bins =0;
     private static String feed_name;
 
@@ -8,23 +10,30 @@ public class Feed {
     public String getfeedname(){
         return feed_name;
     }
-
-    public static void Consume(){
-        if( bins == 0){
-            System.out.println("There are no more bins left for consumption");
-        }
-        else{
-            bins = bins - 1;
-        }
+    public void setNameFeed(String feed_name) {
+        this.feed_name = feed_name;
+    }
+    public double getWeight() {
+        return weight;
     }
 
-    Feed(String feed_name_fn, int bins_b) {
-        feed_name = feed_name_fn;
-        bins = bins_b;
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
-    public void add(int addbins){
-        bins+=addbins;
-
-
+    public boolean isFull() {
+        return isFull;
     }
+
+    public void setFull(boolean isFull) {
+        this.isFull = isFull;
+    }
+
+    public void consume() {
+        isFull = false;
+    }
+
+    Feed(String FeedName_p) {
+        feed_name = FeedName_p;
+    }
+
 }
